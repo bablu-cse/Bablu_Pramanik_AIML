@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calories Prediction Result</title>
+</head>
+<body bgcolor='pink'>
+    <h1 align="center">Your Calories Burnt Prediction Result</h1>
+    
+    <h2>Estimated Calories Burnt</h2>
+    <h1>{{ result.predicted_calories }} calories</h1>
+
+    <center>
+    <hr>
+    <h3>Analysis Charts: Calories vs Exercise Duration</h3>
+    <img src="data:image/png;base64,{{ result.line_chart_url }}" alt="Line Chart" style="max-width:100%">
+    </center>    
+
+  </body>
+</html>

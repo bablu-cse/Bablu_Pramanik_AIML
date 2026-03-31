@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calories Burnt Predictor</title>
+</head>
+<body bgcolor='pink'>
+    <form action="/predict" method="post">
+        <h1 align="center">Calories Burnt Predictor</h1>
+        <p>Enter your details to estimate calories burnt during exercise</p>
+        
+        <p>
+            <label>Gender:</label><br>
+            <select name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+        </p>
+        
+        <p>
+            <label>Age (years):</label><br>
+            <input type="number" name="age" step="1" min="1" max="100" value="30" required>
+        </p>
+        
+        <p>
+            <label>Height (cm):</label><br>
+            <input type="number" name="height" step="0.1" min="100" max="250" value="170" required>
+        </p>
+        
+        <p>
+            <label>Weight (kg):</label><br>
+            <input type="number" name="weight" step="0.1" min="30" max="200" value="70" required>
+        </p>
+        
+        <p>
+            <label>Exercise Duration (minutes):</label><br>
+            <input type="number" name="duration" step="0.5" min="1" max="60" value="20" required>
+        </p>
+        
+        <p>
+            <label>Heart Rate (bpm):</label><br>
+            <input type="number" name="heart_rate" step="1" min="60" max="200" value="100" required>
+        </p>
+        
+        <p>
+            <label>Body Temperature (°C):</label><br>
+            <input type="number" name="body_temp" step="0.1" min="35" max="42" value="40" required>
+        </p>
+        
+        <p>
+            <input type="submit" value="Predict Calories Burnt">
+        </p>
+        
+    </form>
+</body>
+</html>
