@@ -22,7 +22,7 @@ else:
     features = ['Gender_encoded', 'Age', 'Height', 'Weight', 'Duration', 'Heart_Rate', 'Body_Temp']
 
 
-@app.route('/cb')
+@app.route('/')
 def index():
     return render_template('index.html')
 
